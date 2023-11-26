@@ -2,12 +2,10 @@ var id = 0;
 function createBox(element) {
     var div = document.createElement("div");
     div.id = 'box';
-    div.style.width = "25px";
-    div.style.height = "25px";
-    div.style.borderStyle = "solid";
-    div.style.borderWidth = "2px";
+    div.style.height = "32px";
+    div.style.width = "32px";
     div.style.flex = "1";
-    div.addEventListener("click", function(){
+    div.addEventListener("mouseover", function(){
         div.style.backgroundColor = "black";
     });
     element.append(div);
