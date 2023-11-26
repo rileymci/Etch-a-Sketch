@@ -1,4 +1,23 @@
+h1 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.container {
+    justify-content: center;
+    display: flex;
+}
+
+.sidebar {
+    border-style: solid;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    align-items: center;
+    width: 180px;
+
+}
+
 .main {
     display: flex;
-    
+    padding-left: 10px;
 }

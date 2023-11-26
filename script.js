@@ -1,12 +1,15 @@
 var id = 0;
 function createBox(element) {
     var div = document.createElement("div");
-    div.id = 'div' + id++;
+    div.id = 'box';
     div.style.width = "25px";
     div.style.height = "25px";
     div.style.borderStyle = "solid";
     div.style.borderWidth = "2px";
     div.style.flex = "1";
+    div.addEventListener("click", function(){
+        div.style.backgroundColor = "black";
+    });
     element.append(div);
 }
 
