@@ -1,4 +1,10 @@
 var id = 0;
+var rangeValue = 16;
+function range() {
+    rangeValue = document.getElementById("myRange").value;
+    document.getElementById("demo").innerHTML = "User Input: " + rangeValue + " x " + rangeValue;
+  }
+
 function createBox(element) {
     var div = document.createElement("div");
     div.id = 'box';
@@ -20,9 +26,9 @@ function createRow(main){
 
 const maindiv = document.querySelector(".main");
 
-for (i = 0; i < 16; i++){ //each row
+for (i = 0; i < rangeValue; i++){ //each row
     var row = createRow(maindiv);
-    for (b = 0; b < 16; b++){ //each column
+    for (b = 0; b < rangeValue; b++){ //each column
         createBox(row);
     }
 }
