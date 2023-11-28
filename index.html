@@ -12,9 +12,11 @@
     <div class="container">
         <div class="sidebar">
             <h2>Controls</h2>
-            <span id="demo">16 x 16</span>
-            <input type="range" min="1" max="100" value="16" class="slider" id="myRange" onchange="">
-            <button>Clear</button>
+            <button id="rainbowBtn">Rainbow Mode</button>
+            <button id="blackBtn">Black Mode</button>
+            <span id="inputSize">16 x 16</span>
+            <input type="range" min="1" max="100" value="16" class="slider" id="myRange" onchange="clearBox()">
+            <button id="clearBtn">Clear</button>
         </div>
         <div class="main"></div>
     </div>
