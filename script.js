@@ -1,9 +1,15 @@
 var id = 0;
 var rangeValue = 16;
-function range() {
-    rangeValue = document.getElementById("myRange").value;
-    document.getElementById("demo").innerHTML = "User Input: " + rangeValue + " x " + rangeValue;
-  }
+
+document.getElementById("myRange").oninput = (e) => {
+    rangeValue = parseInt(e.target.value);
+    document.getElementById("demo").innerText = rangeValue + " x " + rangeValue;
+}
+
+
+function clearBox(){
+    
+}
 
 function createBox(element) {
     var div = document.createElement("div");
